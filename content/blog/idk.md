@@ -4,7 +4,7 @@ title: "idk"
 description: "Some random thing"
 date: 2023-06-28
 ---
-So I was thinking about the thing we were talking about earlier, and I cannot stop my self to write something.
+So I was thinking about the thing we were talking about earlier, and I cannot stop my self to write something. Imma just put everything out of there and idk.
 
 
 
@@ -32,7 +32,7 @@ Of course, I cannot blame anyone but me. After an afternoon thinking about this,
 
 
 
-Alright, I’m reading this after a few hours and I'm not sure **WHAT THE HECK** I was writing up there. So put all those random, corny and weird stuff and meaningless self blames away. From now on we are friends, like u said. What will happen in the future we leave this question to time to answer. no matter what will happen next year, no matter whether you will be willing to promote our friendship to the next level or not, I will always be willing to be your good friend and do my best to help you with whatever you want at any time.
+Alright, I’m reading this after a few hours and I'm not sure **WHAT THE HECK** I was writing up there. So put all those random, corny and weird stuff and meaningless self blames away. From now on we are friends, like u said. We can start off again and make up everything we missed. What will happen in the future we leave this question for time to answer. **But what I want to tell you is no matter what will happen next year, no matter whether you will be willing to promote our friendship to the next level or not, I will always be willing to be your good friend and do my best to help you with whatever you want at any time.**
 
 
 
