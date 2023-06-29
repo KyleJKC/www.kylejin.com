@@ -1,6 +1,7 @@
 ---
 external: false
 title: "Just some thought"
+draft: true
 description: "Some random thing"
 date: 2023-06-28
 ---
