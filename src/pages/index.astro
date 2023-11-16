@@ -5,12 +5,14 @@ import Intro from "../components/Intro.astro";
 import AboutTheTheme from "../components/AboutTheTheme.astro";
 import { SITE_TITLE } from "../config";
 import ThingsYouCanDo from "src/components/ThingsYouCanDo.astro";
+import ChatJin from "src/components/ChatJin.astro";
 ---
 
 <PageLayout>
   <PageMeta title={`${SITE_TITLE}`} slot="meta" />
   <Fragment slot="main">
     <Intro />
+    <ChatJin />
     <ThingsYouCanDo />
   </Fragment>
 </PageLayout>

@@ -1,0 +1,44 @@
+---
+
+---
+
+<div>
+  <ul class="mt-5">
+    <li>
+      <strong
+        >Yo, I just launched
+        <a
+          class="unset gradient-link tracking-wider font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#7e3dff] to-[#f74ac6] hover:after:bg-gradient-to-r hover:after:from-[#7e3dff] hover:after:to-[#f74ac6]"
+          href={"https://chat.kylejin.com"}
+          target="_blank"
+        >
+          ChatJIN</a
+        >, a highly customizable UI for GPT API. Check it out if you want.</strong
+      >
+    </li>
+  </ul>
+
+  <style>
+    .gradient-link {
+      position: relative;
+      box-decoration-break: clone;
+      text-decoration: none;
+    }
+
+    .gradient-link:hover:after {
+      transform: translateZ(0) scale(1);
+    }
+
+    .gradient-link:after {
+      left: 0;
+      right: 0;
+      bottom: -2px;
+      content: "";
+      height: 2px;
+      position: absolute;
+      transform: translateZ(0) scaleX(0);
+      transform-origin: left center;
+      transition: all 0.15s ease-in-out;
+    }
+  </style>
+</div>
