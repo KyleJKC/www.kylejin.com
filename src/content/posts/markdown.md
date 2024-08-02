@@ -1,12 +1,14 @@
 ---
-title: Markdown 示例
-date: 2024-04-01
-summary: 这是一篇 Markdown 文章的示例。展示了 Markdown 的语法和渲染效果。
-category: 例子
-tags: [Markdown]
+title: 'Blog test'
+summary: 'A simple test post'
+tags: [Test]
+description: 'An entry created just for test'
+date: 2023-04-15
 ---
 
-下面是在 Astro 中编写 Markdown 内容时，可以使用的一些基本 Markdown 语法示例。
+## Hey
+
+This is just a post copied from else where to test the markdown functionality of the site. You could just ignore this post.
 
 ## 标题
 
@@ -37,17 +39,7 @@ All work and no play makes Jack a dull boy.
 
 ## 图片
 
-小尺寸的图片
-
-![图片描述](https://picsum.photos/seed/picsum/250/400)
-
-大尺寸的图片
-
-![图片描述](https://picsum.photos/seed/picsum/1200/900)
-
-带标题的图片
-
-![图片描述](https://picsum.photos/seed/picsum/400/300 '图片标题')
+![图片描述](/images/jason.jpg)
 
 ## 强调
 

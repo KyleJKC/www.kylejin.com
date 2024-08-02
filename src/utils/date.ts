@@ -6,30 +6,43 @@ export function getRelativeTime(startDate: Date, endDate = new Date()) {
   }
   const diffMinutes = Math.floor(diffSeconds / 60)
   if (diffMinutes < 10) {
-    return '刚刚'
+    return 'Just now'
   }
   if (diffMinutes < 60) {
-    return `${diffMinutes} 分钟前`
+    return `${diffMinutes} minutes ago`
   }
   const diffHours = Math.floor(diffMinutes / 60)
   if (diffHours < 24) {
-    return `${diffHours} 小时前`
+    return `${diffHours} hours ago`
   }
   const diffDays = Math.floor(diffHours / 24)
   if (diffDays < 10) {
-    return `${diffDays} 天前`
+    return `${diffDays} days ago`
   }
   return null
 }
 
-// 获取一个格式化的日期，格式为：2024 年 1 月 1 日 星期一
+// 获取一个格式化的日期，格式为：Mon, Jan 1, 2024
 export function getFormattedDate(date: Date) {
-  const year = date.getFullYear() % 100
-  const month = date.getMonth() + 1
+  const year = date.getFullYear()
+  const month = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ][date.getMonth()]
   const day = date.getDate()
-  const week = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'][date.getDay()]
+  const week = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'][date.getDay()]
 
-  return `${year} 年 ${month} 月 ${day} 日 ${week}`
+  return `${week}, ${month} ${day}, ${year}`
 }
 
 // 数字前补 0
@@ -37,15 +50,33 @@ function padZero(number: number, len = 2) {
   return number.toString().padStart(len, '0')
 }
 
-// 获取格式化后的日期时间，格式：2024 年 01 月 01 日 12:00
+// 获取格式化后的日期时间，格式为：Mon, Jan 1, 2024
 export function getFormattedDateTime(date: Date) {
   const year = date.getFullYear()
-  const month = padZero(date.getMonth() + 1)
-  const day = padZero(date.getDate())
-  const hours = padZero(date.getHours())
-  const minutes = padZero(date.getMinutes())
+  const month = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ][date.getMonth()]
+  const day = date.getDate()
+  let hours = date.getHours()
+  const minutes = date.getMinutes().toString().padStart(2, '0') // Ensuring two digits for minutes
+  const ampm = hours >= 12 ? 'PM' : 'AM'
 
-  return `${year} 年 ${month} 月 ${day} 日 ${hours}:${minutes}`
+  // Convert to 12-hour format
+  hours = hours % 12
+  hours = hours ? hours : 12 // Handle the case for midnight (0 should be 12)
+
+  return `${month} ${day}, ${year} at ${hours}:${minutes} ${ampm}`
 }
 
 // 获取两个日期的相差的天数

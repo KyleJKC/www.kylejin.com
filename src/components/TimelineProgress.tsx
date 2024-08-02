@@ -31,16 +31,33 @@ export function TimelineProgress() {
   return (
     <>
       <p className="mt-4">
-        今天是 {currentYear} 年的第 <CountUp to={dayOfYear} decimals={0} /> 天
+        Today is the <CountUp to={dayOfYear} decimals={0} />
+        {getDaySuffix(dayOfYear)} day of {currentYear}
       </p>
       <p className="mt-4">
-        今年已过 <CountUp to={percentOfYear} decimals={5} />%
+        <CountUp to={percentOfYear} decimals={5} />% of the year has past
       </p>
       <p className="mt-4">
-        今天已过 <CountUp to={percentOfToday} decimals={5} />%
+        <CountUp to={percentOfToday} decimals={5} />% of today has past
       </p>
     </>
   )
+}
+
+function getDaySuffix(day: number) {
+  if (day >= 11 && day <= 13) {
+    return 'th'
+  }
+  switch (day % 10) {
+    case 1:
+      return 'st'
+    case 2:
+      return 'nd'
+    case 3:
+      return 'rd'
+    default:
+      return 'th'
+  }
 }
 
 function CountUp({
