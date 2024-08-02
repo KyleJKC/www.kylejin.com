@@ -5,17 +5,9 @@ const config: Config = {
   darkMode: ['selector', '[data-theme="dark"]'],
   theme: {
     fontFamily: {
-      sans: [
-        '"Noto Sans SC"',
-        '"Source Han Sans SC"',
-        'sans-serif',
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
-        '"Noto Color Emoji"',
-      ],
-      serif: ['"Noto Serif SC"', '"Source Han Serif SC"', '"Source Han Serif"', 'serif'],
-      mono: ['"JetBrains Mono"', '"Fira Code"', 'Consolas', 'monospace'],
+      sans: ['Poppins', '"LXGW WenKai TC"', 'sans-serif'],
+      serif: ['"LXGW WenKai TC"', 'serif'],
+      mono: ['"Cascadia Code"', 'monospace'],
     },
     fontSize: {
       xs: '0.75rem',
