@@ -8,15 +8,17 @@ export function Waline({ serverURL }: { serverURL: string }) {
   useEffect(() => {
     const walineInst = init({
       el: ref.current,
+      lang: 'en',
       serverURL,
       dark: "[data-theme='dark']",
-      login: 'force',
+      meta: ['nick'],
       imageUploader: false,
       search: false,
+      copyright: false,
       locale: {
-        placeholder: '发条友善的评论吧（支持 Markdown 语法）…',
+        placeholder: 'Wanna leave a comment? You don\'t necessarily have to create an account.',
       },
-      emoji: ['//unpkg.com/@waline/emojis@1.1.0/bilibili'],
+      emoji: ['//cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tw-emoji'],
     })
 
     return () => {
