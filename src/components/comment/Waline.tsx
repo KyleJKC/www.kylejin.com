@@ -16,7 +16,7 @@ export function Waline({ serverURL }: { serverURL: string }) {
       search: false,
       copyright: false,
       locale: {
-        placeholder: 'Wanna leave a comment? You don\'t necessarily have to create an account.',
+        placeholder: "Wanna leave a comment? You don't necessarily have to create an account.",
       },
       emoji: ['//cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tw-emoji'],
     })
