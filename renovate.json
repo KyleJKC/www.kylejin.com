@@ -1,11 +1,12 @@
 {
   "extends": ["config:base"],
+  "timezone": "America/Los_Angeles",
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "pinDigest", "digest", "rollback", "bump"],
       "automerge": true
     }
   ],
   "automergeStrategy": "rebase",
-  "ignoreTests": true
+  "schedule": ["before 7am on Sunday"]
 }
