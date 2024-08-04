@@ -3,7 +3,7 @@
     "url": "https://www.kylejin.com",
     "title": "Kyle's Site",
     "description": "My personal site",
-    "keywords": "KyleJKC,blog,Kyle Jin",
+    "keywords": "KyleJKC,blog,Kyle Jin,KyleJKC",
     "lang": "en-US"
   },
   "author": {
@@ -50,7 +50,7 @@
       { "light": "#F55555", "dark": "#FCCF31" }
     ],
     "bg": {
-      "primary": { "light": "#ffffff", "dark": "#1c1c1e" },
+      "primary": { "light": "#fafafa", "dark": "#1c1c1e" },
       "secondary": { "light": "#f4f4f5", "dark": "#27272a" }
     },
     "text": {
