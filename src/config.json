@@ -89,11 +89,6 @@
   "footer": {
     "startTime": "2023-04-15T00:00:00Z"
   },
-  "docSearch": {
-    "appId": "",
-    "apiKey": "",
-    "indexName": ""
-  },
   "waline": {
     "serverURL": "https://waline.kylejin.com"
   },
