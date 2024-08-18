@@ -2,6 +2,7 @@
 @import './shiki.css';
 @import './markdown.css';
 @import './signature.css';
+@import './swup.css';
 @import './typed.css';
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
