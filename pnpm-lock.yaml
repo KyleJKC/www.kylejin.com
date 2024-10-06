@@ -54,8 +54,8 @@ importers:
         specifier: ^4.13.1
         version: 4.15.11(@types/node@22.7.4)(rollup@2.79.2)(terser@5.31.6)(typescript@5.6.2)
       chroma-js:
-        specifier: ^2.6.0
-        version: 2.6.0
+        specifier: ^3.0.0
+        version: 3.1.1
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -2177,8 +2177,8 @@ packages:
     resolution: {integrity: sha512-n8enUVCED/KVRQlab1hr3MVpcVMvxtZjmEa956u+4YijlmQED223XMSYj2tLuKvr4jcCTzNNMpQDUer72MMmzA==}
     engines: {node: '>= 14.16.0'}
 
-  chroma-js@2.6.0:
-    resolution: {integrity: sha512-BLHvCB9s8Z1EV4ethr6xnkl/P2YRFOGqfgvuMG/MyCbZPrTA+NeiByY6XvgF0zP4/2deU2CXnWyMa3zu1LqQ3A==}
+  chroma-js@3.1.1:
+    resolution: {integrity: sha512-CGr6w73Gi86142RWqZ1RjED/CyduYw2vMTikQZUvr2jGIihnZlMo/Kzm9rYHWDP2pJc6eebwc8CkX0iteBon+A==}
 
   ci-info@4.0.0:
     resolution: {integrity: sha512-TdHqgGf9odd8SXNuxtUBVx8Nv+qZOejE6qyqiy5NtbYYQOeFa6zmHkxlPzmaLxWWHsU6nJmB7AETdVPi+2NBUg==}
@@ -7523,7 +7523,7 @@ snapshots:
     dependencies:
       readdirp: 4.0.2
 
-  chroma-js@2.6.0: {}
+  chroma-js@3.1.1: {}
 
   ci-info@4.0.0: {}
 
