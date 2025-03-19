@@ -46,7 +46,7 @@ export function PostCopyright({
           <AnimatedSignature />
         </div>
         <p>
-          I don't really care if you copy/re-post stuff from my site somewhere else.
+          I don't really care if you copy stuff from my site to somewhere else.
           <br />
           Therefore, all the posts are licensed under&nbsp;
           <a

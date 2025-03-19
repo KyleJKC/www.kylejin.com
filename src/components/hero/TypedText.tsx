@@ -6,7 +6,7 @@ import Typed from 'typed.js'
 export function TypedText() {
   useEffect(() => {
     const poetry = [
-      '17歲，是學生',
+      '18歲，是學生',
       '喜歡瞎折腾',
       'Have some time?',
       'Check out this place.',
