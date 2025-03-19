@@ -14,7 +14,7 @@ export function Waline({ serverURL }: { serverURL: string }) {
       meta: ['nick'],
       imageUploader: false,
       search: false,
-      copyright: false,
+      noCopyright: true,
       locale: {
         placeholder: "Wanna leave a comment? You don't necessarily have to create an account.",
       },
