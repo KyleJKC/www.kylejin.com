@@ -40,7 +40,10 @@ All work and no play makes Jack a dull boy.
 ## 图片
 
 ![Jason一代](/images/jason.jpg)
+
 ![Jason二代](/images/jason2.PNG)
+
+**Photograph taken by Steven Liu**
 
 ## 强调
 
