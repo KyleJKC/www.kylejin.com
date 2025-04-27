@@ -31,7 +31,7 @@
     "astro": "^4.13.1",
     "chroma-js": "^2.6.0",
     "clsx": "^2.1.1",
-    "framer-motion": "^11.3.21",
+    "framer-motion": "^12.0.0",
     "hastscript": "^9.0.0",
     "jotai": "^2.9.1",
     "katex": "^0.16.11",
