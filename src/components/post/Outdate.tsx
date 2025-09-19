@@ -22,7 +22,7 @@ export function Outdate({ lastMod }: { lastMod: Date }) {
           exit={{ opacity: 0 }}
         >
           <span>
-            This post was last edited on {getFormattedDate(lastMod)}; the content could be outdated.
+            This post was last edited on {getFormattedDate(lastMod)}; the content could potentially be outdated.
           </span>
         </motion.div>
       )}

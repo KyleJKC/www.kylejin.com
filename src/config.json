@@ -13,7 +13,7 @@
   },
   "hero": {
     "name": "Kyle",
-    "description": "「不動搖，不懈怠，不折騰。」",
+    "description": "If you can't read the above, no worries.",
     "socials": [
       {
         "name": "Github",
@@ -26,6 +26,12 @@
         "icon": "icon-instagram",
         "url": "https://www.instagram.com/kylejinkc/",
         "color": "rgb(246, 8, 117)"
+      },
+      {
+        "name": "Email",
+        "icon": "ri-linkedin-box-fill",
+        "url": "https://www.linkedin.com/in/kaichengjin/",
+        "color": "rgb(0, 114, 177)"
       },
       {
         "name": "Email",
@@ -96,7 +102,7 @@
     "wechat": ""
   },
   "analytics": {
-    "enable": false,
+    "enable": true,
     "google": {
       "measurementId": "G-T2ED97CYQH"
     },
