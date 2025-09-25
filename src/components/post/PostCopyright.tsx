@@ -51,11 +51,11 @@ export function PostCopyright({
           Therefore, all the posts are licensed under&nbsp;
           <a
             className="hover:underline hover:text-accent underline-offset-2"
-            href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"
+            href="https://creativecommons.org/licenses/by/4.0/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            CC0
+            CC BY 4.0
           </a>
           .
         </p>
