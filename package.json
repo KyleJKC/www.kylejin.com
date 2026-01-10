@@ -53,8 +53,8 @@
     "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.8.1",
-    "@commitlint/config-conventional": "^19.8.1",
+    "@commitlint/cli": "^20.0.0",
+    "@commitlint/config-conventional": "^20.0.0",
     "@inquirer/prompts": "^5.5.0",
     "lint-staged": "^15.5.2",
     "micromark-util-symbol": "^2.0.1",
