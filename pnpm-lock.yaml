@@ -36,8 +36,8 @@ importers:
         specifier: ^1.7.0
         version: 1.7.0(@types/babel__core@7.20.5)
       '@types/chroma-js':
-        specifier: ^2.4.5
-        version: 2.4.5
+        specifier: ^3.0.0
+        version: 3.1.2
       '@types/lodash-es':
         specifier: ^4.17.12
         version: 4.17.12
@@ -54,8 +54,8 @@ importers:
         specifier: ^5.16.9
         version: 5.16.9(@types/node@25.0.8)(jiti@1.21.7)(rollup@2.79.2)(terser@5.44.1)(typescript@5.9.3)(yaml@2.8.2)
       chroma-js:
-        specifier: ^2.6.0
-        version: 2.6.0
+        specifier: ^3.0.0
+        version: 3.2.0
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -1950,8 +1950,8 @@ packages:
   '@types/babel__traverse@7.28.0':
     resolution: {integrity: sha512-8PvcXf70gTDZBgt9ptxJ8elBeBjcLOAcOtoO/mPJjtji1+CdGbHgm77om1GrsPxsiE+uXIpNSK64UYaIwQXd4Q==}
 
-  '@types/chroma-js@2.4.5':
-    resolution: {integrity: sha512-6ISjhzJViaPCy2q2e6PgK+8HcHQDQ0V2LDiKmYAh+jJlLqDa6HbwDh0wOevHY0kHHUx0iZwjSRbVD47WOUx5EQ==}
+  '@types/chroma-js@3.1.2':
+    resolution: {integrity: sha512-YBTQqArPN8A0niHXCwrO1z5x++a+6l0mLBykncUpr23oIPW7L4h39s6gokdK/bDrPmSh8+TjMmrhBPnyiaWPmQ==}
 
   '@types/conventional-commits-parser@5.0.2':
     resolution: {integrity: sha512-BgT2szDXnVypgpNxOK8aL5SGjUdaQbC++WZNjF1Qge3Og2+zhHj+RWhmehLhYyvQwqAmvezruVfOf8+3m74W+g==}
@@ -2387,8 +2387,8 @@ packages:
     resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
     engines: {node: '>= 14.16.0'}
 
-  chroma-js@2.6.0:
-    resolution: {integrity: sha512-BLHvCB9s8Z1EV4ethr6xnkl/P2YRFOGqfgvuMG/MyCbZPrTA+NeiByY6XvgF0zP4/2deU2CXnWyMa3zu1LqQ3A==}
+  chroma-js@3.2.0:
+    resolution: {integrity: sha512-os/OippSlX1RlWWr+QDPcGUZs0uoqr32urfxESG9U93lhUfbnlyckte84Q8P1UQY/qth983AS1JONKmLS4T0nw==}
 
   ci-info@4.3.1:
     resolution: {integrity: sha512-Wdy2Igu8OcBpI2pZePZ5oWjPC38tmDVx5WKUXKwlLYkA0ozo85sLsLvkBbBn/sZaSCMFOGZJ14fvW9t5/d7kdA==}
@@ -7419,7 +7419,7 @@ snapshots:
     dependencies:
       '@babel/types': 7.28.6
 
-  '@types/chroma-js@2.4.5': {}
+  '@types/chroma-js@3.1.2': {}
 
   '@types/conventional-commits-parser@5.0.2':
     dependencies:
@@ -8014,7 +8014,7 @@ snapshots:
     dependencies:
       readdirp: 4.1.2
 
-  chroma-js@2.6.0: {}
+  chroma-js@3.2.0: {}
 
   ci-info@4.3.1: {}
 
