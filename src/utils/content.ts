@@ -9,22 +9,16 @@ async function getAllPosts() {
   return allPosts
 }
 
-// 获取所有文章，发布日期升序
-async function getNewestPosts() {
+// All posts ascending by date (oldest first) — used internally for aggregations
+async function getPostsAscending() {
   const allPosts = await getAllPosts()
-
-  return allPosts.sort((a, b) => {
-    return a.data.date.valueOf() - b.data.date.valueOf()
-  })
+  return allPosts.sort((a, b) => a.data.date.valueOf() - b.data.date.valueOf())
 }
 
-// 获取所有文章，发布日期降序
-export async function getOldestPosts() {
+// All posts descending by date (newest first) — used for archive/category/tag listings
+export async function getPostsDescending() {
   const allPosts = await getAllPosts()
-
-  return allPosts.sort((a, b) => {
-    return b.data.date.valueOf() - a.data.date.valueOf()
-  })
+  return allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
 }
 
 // 获取所有文章，置顶优先，发布日期降序
@@ -64,7 +58,7 @@ export function slugify(text: string) {
 
 // 获取所有分类
 export async function getAllCategories() {
-  const newestPosts = await getNewestPosts()
+  const newestPosts = await getPostsAscending()
 
   const allCategories = newestPosts.reduce<{ slug: string; name: string; count: number }[]>(
     (acc, cur) => {
@@ -91,7 +85,7 @@ export async function getAllCategories() {
 
 // 获取所有标签
 export async function getAllTags() {
-  const newestPosts = await getNewestPosts()
+  const newestPosts = await getPostsAscending()
 
   const allTags = newestPosts.reduce<{ slug: string; name: string; count: number }[]>(
     (acc, cur) => {

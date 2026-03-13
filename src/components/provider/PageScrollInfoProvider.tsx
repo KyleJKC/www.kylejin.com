@@ -8,34 +8,33 @@ export function PageScrollInfoProvider() {
   const setScrollDirection = useSetAtom(pageScrollDirectionAtom)
   const prevScrollY = useRef(0)
 
-  const scrollHandler = throttle(
-    () => {
-      let currentTop = document.documentElement.scrollTop
-
-      if (currentTop === 0) {
-        const bodyStyle = document.body.style
-        if (bodyStyle.position === 'fixed') {
-          const bodyTop = bodyStyle.top
-          currentTop = Math.abs(parseInt(bodyTop, 10))
-        }
-      }
-
-      setScrollDirection(prevScrollY.current - currentTop > 0 ? 'up' : 'down')
-      prevScrollY.current = currentTop
-      setScrollLocation(currentTop)
-    },
-    16,
-    {
-      leading: false,
-    },
-  )
-
   useLayoutEffect(() => {
+    const scrollHandler = throttle(
+      () => {
+        let currentTop = document.documentElement.scrollTop
+
+        if (currentTop === 0) {
+          const bodyStyle = document.body.style
+          if (bodyStyle.position === 'fixed') {
+            currentTop = Math.abs(parseInt(bodyStyle.top, 10))
+          }
+        }
+
+        setScrollDirection(prevScrollY.current - currentTop > 0 ? 'up' : 'down')
+        prevScrollY.current = currentTop
+        setScrollLocation(currentTop)
+      },
+      16,
+      { leading: false },
+    )
+
     scrollHandler()
     window.addEventListener('scroll', scrollHandler)
     return () => {
       window.removeEventListener('scroll', scrollHandler)
+      scrollHandler.cancel()
     }
   }, [])
+
   return null
 }

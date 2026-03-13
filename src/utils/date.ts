@@ -1,3 +1,6 @@
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+const WEEKDAYS = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
+
 // 获取两个日期的相对时间
 export function getRelativeTime(startDate: Date, endDate = new Date()) {
   const diffSeconds = Math.floor((endDate.getTime() - startDate.getTime()) / 1000)
@@ -25,22 +28,9 @@ export function getRelativeTime(startDate: Date, endDate = new Date()) {
 // 获取一个格式化的日期，格式为：Mon, Jan 1, 2024
 export function getFormattedDate(date: Date) {
   const year = date.getFullYear()
-  const month = [
-    'Jan',
-    'Feb',
-    'Mar',
-    'Apr',
-    'May',
-    'Jun',
-    'Jul',
-    'Aug',
-    'Sep',
-    'Oct',
-    'Nov',
-    'Dec',
-  ][date.getMonth()]
+  const month = MONTHS[date.getMonth()]
   const day = date.getDate()
-  const week = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'][date.getDay()]
+  const week = WEEKDAYS[date.getDay()]
 
   return `${week}, ${month} ${day}, ${year}`
 }
@@ -50,31 +40,16 @@ function padZero(number: number, len = 2) {
   return number.toString().padStart(len, '0')
 }
 
-// 获取格式化后的日期时间，格式为：Mon, Jan 1, 2024
+// 获取格式化后的日期时间，格式为：Jan 1, 2024 at 3:04 PM
 export function getFormattedDateTime(date: Date) {
   const year = date.getFullYear()
-  const month = [
-    'Jan',
-    'Feb',
-    'Mar',
-    'Apr',
-    'May',
-    'Jun',
-    'Jul',
-    'Aug',
-    'Sep',
-    'Oct',
-    'Nov',
-    'Dec',
-  ][date.getMonth()]
+  const month = MONTHS[date.getMonth()]
   const day = date.getDate()
   let hours = date.getHours()
-  const minutes = date.getMinutes().toString().padStart(2, '0') // Ensuring two digits for minutes
+  const minutes = date.getMinutes().toString().padStart(2, '0')
   const ampm = hours >= 12 ? 'PM' : 'AM'
 
-  // Convert to 12-hour format
-  hours = hours % 12
-  hours = hours ? hours : 12 // Handle the case for midnight (0 should be 12)
+  hours = hours % 12 || 12
 
   return `${month} ${day}, ${year} at ${hours}:${minutes} ${ampm}`
 }
