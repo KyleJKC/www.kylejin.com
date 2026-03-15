@@ -39,7 +39,7 @@
         "remark-math": "^6.0.0",
         "remixicon": "^4.8.0",
         "tailwindcss": "^3.4.19",
-        "typed.js": "^2.1.0",
+        "typed.js": "^3.0.0",
         "typescript": "^5.9.3",
         "unist-util-visit": "5.1.0",
       },
@@ -2026,7 +2026,7 @@
 
     "typed-query-selector": ["typed-query-selector@2.12.0", "", {}, "sha512-SbklCd1F0EiZOyPiW192rrHZzZ5sBijB6xM+cpmrwDqObvdtunOHHIk9fCGsoK5JVIYXoyEp4iEdE3upFH3PAg=="],
 
-    "typed.js": ["typed.js@2.1.0", "", {}, "sha512-bDuXEf7YcaKN4g08NMTUM6G90XU25CK3bh6U0THC/Mod/QPKlEt9g/EjvbYB8x2Qwr2p6J6I3NrsoYaVnY6wsQ=="],
+    "typed.js": ["typed.js@3.0.0", "", {}, "sha512-X4pjf0E7riZBo6j3NS21/7cJJ20osSOtD1OxlRoKfFU3GsdPuSpWlFcIKWf0k8uoKwBBrPuHGx+fKeU6GzRcKg=="],
 
     "typesafe-path": ["typesafe-path@0.2.2", "", {}, "sha512-OJabfkAg1WLZSqJAJ0Z6Sdt3utnbzr/jh+NAHoyWHJe8CMSy79Gm085094M9nvTPy22KzTVn5Zq5mbapCI/hPA=="],
 
