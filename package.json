@@ -55,7 +55,7 @@
   "devDependencies": {
     "@commitlint/cli": "20.5.0",
     "@commitlint/config-conventional": "20.5.0",
-    "@inquirer/prompts": "^5.5.0",
+    "@inquirer/prompts": "^8.0.0",
     "lint-staged": "16.4.0",
     "micromark-util-symbol": "^2.0.1",
     "prettier": "^3.7.4",
